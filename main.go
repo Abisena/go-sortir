@@ -25,7 +25,7 @@ func main() {
 
 	// Loop tiap File
 	for _, file := range files {
-		if file.IsDir() || file.Name() == "main.go" {
+		if file.IsDir() || file.Name() == "main.go" || file.Name() == "go.mod" {
 			continue
 		}
 
